@@ -63,8 +63,12 @@ Notation: `LL` brightness 0–100, `SS` speed, `RR GG BB` colour, `WW` warm whit
 The app also drives bulbs, ceiling lights, floor lamps, "star"/nebula projectors, wake-up lights, pool/flood lights
 and string lights. `SendDataHandler::is…WithPeripheral:` decides the type from the name, and each type has its own
 switch/colour/timer packets (`SwitchStarLightWithONOFF:`, `SetCeilingRGBCWTimingWithModel:`,
-`ChangeCCTColorWithModel:brightness:`, …). They're all in `decomp_tool_named.c` if someone wants to add support for
-their device.
+`ChangeCCTColorWithModel:brightness:`, …).
+
+To add support for one of these, decompile the packet builders from your own decrypted copy of the app. The
+decompiled code isn't in this repo because it's Keepsmile's. Follow [`analysis/README.md`](analysis/README.md) and
+use `analysis/pattern2.txt`, which dumps every `BluetoothDataTool`, `SendDataHandler`, `BluetoothManage` and
+`BluetoothConnection` method.
 
 ## App and library
 

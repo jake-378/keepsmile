@@ -60,8 +60,15 @@ selector string it loads and writes a `stub name<TAB>selector` table:
 ### 5. Decompile the Bluetooth code
 
 `DumpMatching.java <regex file> <output>` decompiles every function whose name matches the regex. The regex goes
-in a file because batch-file arguments mangle `|`. The `pattern*.txt` files are the regexes that were used, e.g.
-`pattern.txt` covers the write/switch/colour/brightness methods and the CoreBluetooth delegate callbacks.
+in a file because batch-file arguments mangle `|`. The `pattern*.txt` files are the regexes that were used:
+
+| File | Dumps |
+| ---- | ----- |
+| `pattern.txt` | write/switch/colour/brightness methods and the CoreBluetooth delegate callbacks |
+| `pattern2.txt` | every method of the four Bluetooth classes, including every packet builder in `BluetoothDataTool` |
+| `pattern3.txt` | (used with `XrefStrings.java`) the `KS03-` / `KS03~` style device-name prefixes |
+| `pattern4.txt` | the strip screens, brightness sliders and the `is…WithPeripheral:` device-type checks |
+| `pattern5.txt` | the post-connect handshake and the state-report parser |
 
 ```powershell
 ... -postScript DumpMatching.java analysis\pattern.txt analysis\decomp_ble.c
