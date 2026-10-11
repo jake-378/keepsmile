@@ -1,0 +1,1 @@
+^KSStrip|Strip.*(Bri|bright)|::(BrightValueChanged|RGBBriValueChanged|RGBBrightnessChanged|RGBBriTouchUp|RGBBrightnessTouchUp)|SendDataHandler::is[A-Za-z]+WithPeripheral

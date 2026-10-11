@@ -1,0 +1,1 @@
+BluetoothManage::(QueryDeviceInfoWithPeripheral|BlackDeviceInfo|connect_callBackPeripheral|connect_didConnectPeripheral|ValidationTime)|SendDataHandler::(QueryDeviceInfo|ValidationTime|QueryLightInfo)|BluetoothDataTool::(KSProofTime|ProofTime|QueryLightInfo)

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Keepsmile's app and anything derived from it (copyrighted, regenerate locally)
+*.ipa
+ipa/
+analysis/ghidra_proj/
+analysis/decomp_*.c
+analysis/stubs.tsv
+analysis/ks_prefix_xrefs.tsv
+analysis/ghidra_log*.txt
+
+# Test output
+analysis/gui_*.png
