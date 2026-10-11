@@ -211,6 +211,10 @@ of the app.
 - **Takes a long time to connect the first time**: Windows reads all the Bluetooth services the first time. Later
   connections use the cached services and take about a second.
 
+## License
+
+[MIT](LICENSE)
+
 ## Disclaimer
 
 This is an independent project and isn't affiliated with or endorsed by Keepsmile. The protocol was worked out for
