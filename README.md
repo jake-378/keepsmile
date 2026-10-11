@@ -211,6 +211,11 @@ of the app.
 - **Takes a long time to connect the first time**: Windows reads all the Bluetooth services the first time. Later
   connections use the cached services and take about a second.
 
+## Roadmap
+
+The app supports a lot more than on/off/colour/brightness: built-in effects, music mode, sleep and scheduled timers,
+warm white and more. [`TODO.md`](TODO.md) lists everything found in the analysis, with the packet bytes.
+
 ## License
 
 [MIT](LICENSE)

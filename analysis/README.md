@@ -69,6 +69,14 @@ python analysis\apply_stubs.py analysis\stubs.tsv analysis\decomp_ble.c analysis
 ```
 
 `apply_stubs.py` rewrites `objc_stub::FUN_…` calls into their selector names using `stubs.tsv`.
+
+Some packets are copied from constants (Ghidra shows them as `DAT_100dbcb88` and so on).
+`read_consts.py <ipa> <length> <address>...` maps those addresses to file offsets and prints the bytes:
+
+```powershell
+python analysis\read_consts.py com.KS.KSLights-2.3.5.ipa 8 100dbcb88 100dbcba8
+```
+
 `XrefStrings.java` lists the functions that reference a given string. That's how the code that checks the `KS03-` /
 `KS04-` name prefixes was found.
 
