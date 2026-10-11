@@ -32,7 +32,7 @@ tested against real hardware.
 - Python 3.10 or newer (tkinter is included with the standard Windows installer)
 
 ```powershell
-git clone https://github.com/<you>/keepsmile.git
+git clone https://github.com/jake-378/keepsmile.git
 cd keepsmile
 pip install -r requirements.txt
 ```
